@@ -19,3 +19,4 @@ install_dependencies:
 testing_testing:
   stage: test
   script: npm test
+  coverage: /All\sfiles.*?\s+(\d+.\d+)/

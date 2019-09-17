@@ -1,5 +1,8 @@
 # `@greenberry/use-label-prefix`
 
+[![coverage report](https://gitlab.com/greenberrynl/hooks/use-label-prefix/badges/master/coverage.svg)](https://gitlab.com/greenberrynl/hooks/use-label-prefix/commits/master)
+[![pipeline status](https://gitlab.com/greenberrynl/hooks/use-label-prefix/badges/master/pipeline.svg)](https://gitlab.com/greenberrynl/hooks/use-label-prefix/commits/master)
+
 ## Installation
 
 ```bash
