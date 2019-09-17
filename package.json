@@ -1,6 +1,6 @@
 {
   "name": "@greenberry/use-label-prefix",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Custom React Hook to prefix labels on Input fields",
   "main": "index.js",
   "repository": "git@gitlab.com:greenberrynl/hooks/use-label-prefix.git",
@@ -39,5 +39,11 @@
     "jest": "^24.9.0",
     "react-test-renderer": "^16.9.0"
   },
-  "keywords": ["react", "hooks", "react-hooks", "custom-hooks", "input"]
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "custom-hooks",
+    "input"
+  ]
 }
