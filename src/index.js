@@ -8,6 +8,7 @@ import {
 } from 'ramda';
 
 const allChars = split('', 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789');
+const serializeLabel = str => str.replace(/\s/gi, '__');
 const shuffler = curry((random, list) => {
   let idx = -1;
   let position;
@@ -42,7 +43,7 @@ const useLabelPrefix = (
     join(""),
   )(allChars);
 
-  const [prefixed] = useState(`${prefix}_${label}`);
+  const [prefixed] = useState(`p_${prefix}_${serializeLabel(label)}`);
 
   return prefixed;
 }
