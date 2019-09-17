@@ -11,12 +11,14 @@ cache:
 install_dependencies:
   stage: build
   script:
-    - npm install
+    - yarn install --frozen-lockfile
+    # Install peer dependencies
+    - yarn add react react-dom
   artifacts:
     paths:
       - node_modules/
 
 testing_testing:
   stage: test
-  script: npm test
+  script: yarn test
   coverage: /All\sfiles.*?\s+(\d+.\d+)/
