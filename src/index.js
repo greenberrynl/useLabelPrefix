@@ -50,7 +50,7 @@ const useLabelPrefix = (
     join(""),
   )(allChars);
 
-  const [prefixed] = useState(`p_${prefix}_${isTest ? '' : serializeLabel(label)}`);
+  const [prefixed] = useState(`p_${isTest ? '' : prefix}_${serializeLabel(label)}`);
 
   return prefixed;
 }
