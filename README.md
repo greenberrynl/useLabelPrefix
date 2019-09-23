@@ -43,3 +43,8 @@ const MyInput = () => {
 };
 
 ```
+
+
+## Notes
+
+- When `NODE_ENV` is `test` no random string will be generated

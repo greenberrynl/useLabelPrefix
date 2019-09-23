@@ -7,6 +7,13 @@ import {
   take
 } from 'ramda';
 
+const env = process.env || { NODE_ENV: undefined };
+const {
+  NODE_ENV
+} = env;
+
+const isTest = NODE_ENV === 'test';
+
 const allChars = split('', 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789');
 const serializeLabel = str => str.replace(/\s/gi, '__');
 const shuffler = curry((random, list) => {
@@ -43,7 +50,7 @@ const useLabelPrefix = (
     join(""),
   )(allChars);
 
-  const [prefixed] = useState(`p_${prefix}_${serializeLabel(label)}`);
+  const [prefixed] = useState(`p_${prefix}_${isTest ? '' : serializeLabel(label)}`);
 
   return prefixed;
 }
